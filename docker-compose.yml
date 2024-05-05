@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  tesourodireto:
-    image: binanceLaunchpadNotify
-    container_name: binanceLaunchpadNotify
+  binance:
+    image: binancelauchpadnotify
+    container_name: binancelauchpadnotify
     build:
       context: .
       dockerfile: Dockerfile
