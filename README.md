@@ -42,9 +42,28 @@ Este é um script Node.js que extrai dados do [Binance Launchpad](https://launch
 
 5. Execute o script:
 
+Para executar o script, você tem duas opções:
+
+1. **Usando npm start:**
+
+   Este comando inicia a execução do script Node.js. Ele é útil quando você está desenvolvendo e deseja executar o script localmente.
+
    ```bash
    npm start
    ```
+
+2. **Usando Docker Compose:**
+
+   Este comando inicia o script Node.js em um contêiner Docker usando Docker Compose. É útil quando você deseja executar o script em um ambiente isolado e garantir que todas as dependências estejam corretamente configuradas.
+
+   ```bash
+   docker compose up -d
+   ```
+
+   - `docker compose up`: Inicia o contêiner conforme definido no arquivo `docker-compose.yml`.
+   - `-d` ou `--detach`: Executa o contêiner em segundo plano, liberando o terminal atual para outras tarefas.
+
+Ambos os comandos iniciarão a execução do script para extrair dados do Binance Launchpad, salvá-los em um arquivo JSON e enviar um email sempre que um novo projeto for adicionado. Certifique-se de ter configurado corretamente as variáveis de ambiente no arquivo `.env` antes de executar o script.
 
 ## Funcionalidades
 
