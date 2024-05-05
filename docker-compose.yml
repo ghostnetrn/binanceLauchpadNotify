@@ -2,8 +2,8 @@ version: '3'
 
 services:
   binance:
-    image: binancelauchpadnotify
-    container_name: binancelauchpadnotify
+    image: binancelaunchpadnotify
+    container_name: binancelaunchpadnotify
     build:
       context: .
       dockerfile: Dockerfile
