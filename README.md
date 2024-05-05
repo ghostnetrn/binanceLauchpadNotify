@@ -1,1 +1,1 @@
-"# binanceLauchpadNotify" 
+"# binanceLaunchpadNotify" 
